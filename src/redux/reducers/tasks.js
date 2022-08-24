@@ -24,7 +24,6 @@ function tasks(state = initialState, action) {
       };
     case EDIT_TASK: {
       const copyTasks = [...state.tasks].map((item) => {
-        console.log(action.payload);
         if (item.id === action.payload?.id) {
           return {
             ...item,
